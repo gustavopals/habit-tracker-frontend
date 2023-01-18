@@ -1,16 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
-import { Habit } from "./components/Habit";
+import "./styles/global.css";
 
-function App() {
-	const [count, setCount] = useState(0);
+import logoImage from "./assets/logo.svg";
 
+export function App() {
 	return (
-		<div>
-			<Habit completed={3} />
-			<Habit completed={10} />
-
+		<div className="w-screen h-screen flex justify-center items-center">
+			<div className="w-full max-w-5xl px-6 flex flex-col gap-16">
+				<img src={logoImage} alt="habits" />
+			</div>
 		</div>
 	);
 }
